@@ -1,0 +1,41 @@
+$darkBrown:#252529;
+$white:#ffffff;
+$black:#000000;
+$red:#E10514;
+$gray:#666666;
+$darkGray:#333333;
+
+.safe-area {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar-track {
+  background-color: $darkGray;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: $darkGray;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $white;
+  background-image: -webkit-linear-gradient(45deg,
+          transparent 25%,
+          transparent 50%,
+          transparent 75%,
+          transparent)
+}
+
+.track-vertical {
+  bottom: 2px;
+  position: absolute;
+  right: 1px;
+  top: 0;
+  width: 6px;
+  background-color: $darkGray;
+  &.phone {
+    right: 0;
+  }
+}

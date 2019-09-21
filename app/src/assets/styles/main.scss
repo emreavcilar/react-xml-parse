@@ -1,0 +1,39 @@
+@import "base/fonts";
+@import "abstracts/variables";
+@import 'vendors/normalize';
+@import 'pages/home';
+@import 'layout/responsive';
+
+body{
+  background-color: $white;
+  font-size: 1em;
+  @include roboto;
+}
+
+h1,h2,h3 {
+  color: $white;
+}
+
+h1{
+  margin: 0 0 10px 0;
+}
+
+p,span{
+  color: $black;
+}
+
+header {
+  background-color: $red;
+  padding: 10px;
+  margin: 0 0 10px 0;
+}
+
+a{
+  color:$white;
+}
+
+a:visited{
+  span{
+    color: #666666;
+  }
+}
